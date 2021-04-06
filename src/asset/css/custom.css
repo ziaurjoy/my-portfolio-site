@@ -126,3 +126,42 @@
     font-family: 'Raleway',sans-serif;
     font-size: 14px;
 }
+
+
+
+
+.summaryFixedBanner{
+    background-image: url('../images/banner.jpg');
+    min-height: 400px;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.summaryBannerOverlay{
+    position: absolute;
+    min-height: 400px;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.totalProjectTitle{
+    font-family: 'Montserreat',sans-serif;
+    color: white !important;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.totalProjectSubtitle{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+}
+
+.summaryIconColor{
+    color: #0073E6 !important;
+    font-size: 15px;
+}
