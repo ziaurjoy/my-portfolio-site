@@ -1,6 +1,7 @@
 import TopBanner from './components/TopBanner/TopBanner'
 import Service from './components/Service/Service'
 import TopNaver from './components/TopNaver/TopNaver'
+import Analysis from './components/Analysis/Analysis'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <TopNaver />
       <TopBanner />
       <Service />
+      <Analysis />
     </div>
   );
 }
