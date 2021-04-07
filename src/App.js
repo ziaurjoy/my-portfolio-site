@@ -3,6 +3,7 @@ import Service from './components/Service/Service'
 import TopNaver from './components/TopNaver/TopNaver'
 import Analysis from './components/Analysis/Analysis'
 import Summary from './components/Summary/Summary'
+import RecentProjects from './components/RecentProject/RecentProjects'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Service />
       <Analysis />
       <Summary />
+      <RecentProjects />
     </div>
   );
 }

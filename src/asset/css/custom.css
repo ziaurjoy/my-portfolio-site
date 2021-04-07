@@ -165,3 +165,29 @@
     color: #0073E6 !important;
     font-size: 15px;
 }
+
+
+.projectCard{
+    border-radius: 2px;
+    border: none !important;
+    margin: 2px 2px 2px 2px;
+    box-shadow: 0 0 4px 0 rgba(0,115,230,0.2);
+    margin-top: 50px;
+}
+
+.projectCard:hover{
+    box-shadow: 0 0 12px 0 rgba(0,115,230,0.2);
+}
+
+.projectCardTitle{
+    font-family: 'Montserreat',sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+
+}
+
+.projectCardDescription{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
