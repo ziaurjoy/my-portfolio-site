@@ -229,3 +229,43 @@
     border-radius: 50%;
     
 }
+
+.footerCard{
+    /* border-radius: 2px; */
+    border: 2px !important;
+    margin: 2px 2px 2px 2px;
+    box-shadow: 0 0 8px 0 rgba(0,115,230,0.2);
+    margin-top: 50px;
+}
+
+.socialLink{
+    text-decoration: none !important;
+    font-family: 'Raleway',sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.socialLink:hover{
+    text-decoration: none !important;
+    font-family: 'Raleway',sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 10px;
+    color: #000000;
+}
+
+.copyrightFooter{
+    text-align: center;
+    padding: 15px 0px 10px 0px;
+    margin-top: 20px;
+    /* color: #0073E6; */
+    background-color: #0073E6;
+}
+
+.copyrightFooterTitle{
+    font-family: 'Raleway',sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: wheat;
+}
