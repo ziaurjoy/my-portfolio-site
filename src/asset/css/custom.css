@@ -204,3 +204,17 @@
     font-family: 'Raleway',sans-serif;
     font-size: 14px;
 }
+
+
+.vedioDescription{
+    font-weight: 400;
+    color: #000000;
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    padding: 20px 70px 20px 70px;
+}
+
+.vedioFontAwasam{
+    font-size: 50px;
+    color: #0073E6 !important;
+}
