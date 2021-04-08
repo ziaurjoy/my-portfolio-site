@@ -1,10 +1,12 @@
-import HomePage from "./Pages/HomePage";
+
+import Home from "./Pages/HomePage";
+import PortPolioPages from "./Pages/PortPolioPages";
 
 
 function App() {
   return (
     <div>
-      <HomePage />
+    <PortPolioPages />
     </div>
   );
 }

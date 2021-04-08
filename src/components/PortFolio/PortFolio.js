@@ -3,13 +3,11 @@ import { Col, Container, Row, Card, Button } from 'react-bootstrap'
 
 import ProjectImage from '../../asset/images/project.png'
 
-export default class RecentProjects extends Component {
+export default class PortFolio extends Component {
     render() {
         return (
-            
-                <Fragment>
+            <Fragment>
                     <Container className="text-center">
-                        <h1 className="serviceMainTitle">Recent Projects</h1>
                         <Row>
                             <Col lg={4} md={6} sm={12}>
                                 <Card className="projectCard">
@@ -53,7 +51,6 @@ export default class RecentProjects extends Component {
                         </Row>
                     </Container>
                 </Fragment>
-          
         )
     }
 }
