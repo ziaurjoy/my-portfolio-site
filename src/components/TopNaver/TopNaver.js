@@ -40,7 +40,7 @@ export default class TopNaver extends Component {
         return (
             <><title>{this.state.titleNav}</title>
                 <Navbar fixed="top" className={this.state.navBackground} collapseOnSelect expand="lg" variant="dark">
-                    <Navbar.Brand className={this.state.navbarTitile} href="#home"><img style={{height: "22px", width: "22px"}} src={logo} /> ZiaurJoy</Navbar.Brand>
+                    <Navbar.Brand><NavLink style={{textDecoration: 'none'}} className={this.state.navbarTitile} to='/'><img style={{height: "22px", width: "22px"}} src={logo} /> ZiaurJoy</NavLink></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">

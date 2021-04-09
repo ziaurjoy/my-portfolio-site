@@ -4,6 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF,faYoutube } from '@fortawesome/free-brands-svg-icons'
 import {faPhone, faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom';
 
 export default class FooterSection extends Component {
     render() {
@@ -25,13 +26,12 @@ export default class FooterSection extends Component {
                         </Col>
                         <Col className="mt-5 text-justify" lg={3} md={6} sm={12}>
                             <h4>Information</h4>
-                            <a href="#" className="socialLink">About Me</a><br/>
-                            <a href="#" className="socialLink">My Resume</a><br/>
-                            <a href="#" className="socialLink">Contact</a>
+                            <Link to="/about" className="socialLink">About Me</Link><br/>
+                            <Link to="/contact" className="socialLink">Contact</Link>
                         </Col>
                         <Col className="mt-5 text-justify" lg={3} md={6} sm={12}>
                             <h4>Legal</h4>
-                            <a>Refund Policy</a><br/>
+                            <Link className="socialLink" to="/refund">Refund Policy</Link><br/>
                             <a>Terms And Condition</a><br/>
                             <a>Privacy Policy</a>
                         </Col>

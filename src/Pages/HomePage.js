@@ -13,6 +13,11 @@ import ClientReviews from '../components/ClientReviews/ClientReviews'
 import FooterSection from '../components/FooterSection/FooterSection'
 
 export default class HomePage extends Component {
+
+    componentDidMount(){
+        window.scroll(0,0)
+    }
+
     render() {
         return (
             <>

@@ -7,6 +7,11 @@ import TopNaver from '../components/TopNaver/TopNaver'
 import PortFolio from '../components/PortFolio/PortFolio'
 
 export default class PortPolioPages extends Component {
+
+    componentDidMount(){
+        window.scroll(0,0)
+    }
+
     render() {
         return (
             <>  

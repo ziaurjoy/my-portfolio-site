@@ -103,6 +103,7 @@
     -o-transition:background-color 400ms linear ;
     transition:background-color 400ms linear ;
     background-color: #ffffff !important;
+    box-shadow: 0 0 4px 0 rgba(0,115,230,0.2);
 }
 
 .navItem{
@@ -310,4 +311,28 @@
 
 }
 
+.refundPolicyDescription{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
 
+.projectDetailsImage{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.detailsButton{
+    text-decoration: none !important;
+    color: wheat !important;
+}
+
+
+.courseDescription{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: whitesmoke;
+}

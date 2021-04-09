@@ -3,9 +3,10 @@ import React, { Component } from 'react'
 import FooterSection from '../components/FooterSection/FooterSection'
 import TopPages from '../components/TopPages/TopPages'
 import TopNaver from '../components/TopNaver/TopNaver'
-import Contact from '../components/Contact/Contact'
+import PortFolio from '../components/PortFolio/PortFolio'
+import ProjectDetails from '../components/ProjectDetails/ProjectDetails'
 
-export default class AllCoursPage extends Component {
+export default class ProjectDetailsPages extends Component {
 
     componentDidMount(){
         window.scroll(0,0)
@@ -13,9 +14,10 @@ export default class AllCoursPage extends Component {
 
     render() {
         return (
-            <>  <TopNaver  title="Contact"  />
-                <TopPages pageTitle = "Contact Me" />
-                <Contact/>
+            <>
+                <TopNaver title="Project Details"  />
+                <TopPages pageTitle = "Project Name" />
+                <ProjectDetails />
                 <FooterSection />
             </>
         )

@@ -7,6 +7,9 @@ import TopNaver from "../components/TopNaver/TopNaver";
 import TopPages from "../components/TopPages/TopPages";
 
 export default class About extends Component {
+    componentDidMount(){
+        window.scroll(0,0)
+    }
     render() {
         return (
             <>

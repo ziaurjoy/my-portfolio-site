@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import { Col, Container, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 import CourseImage from '../../asset/images/course.jpg'
 
@@ -18,7 +19,7 @@ export default class AllCourse extends Component {
                             <Col lg={6} md={6} sm={12}>
                                 <h5 className="courseTitle">Web Development</h5>
                                 <p className="courseDescription">Want to build your website or app using the most up-to-date web development capabilities?</p>
-                                <a href="#">Details</a>
+                                <Link to="/coursedetails">Details</Link>
                             </Col>
                         </Row>
                     </Col>
@@ -30,7 +31,7 @@ export default class AllCourse extends Component {
                             <Col lg={6} md={6} sm={12}>
                                 <h3 className="courseTitle">Web Development</h3>
                                 <p className="courseDescription">Want to build your website or app using the most up-to-date web development capabilities?</p>
-                                <a href="#">Details</a>
+                                <Link to="/coursedetails">Details</Link>
                             </Col>
                         </Row>
                     </Col>
@@ -42,7 +43,7 @@ export default class AllCourse extends Component {
                             <Col lg={6} md={6} sm={12}>
                                 <h3 className="courseTitle">Web Development</h3>
                                 <p className="courseDescription">Want to build your website or app using the most up-to-date web development capabilities?</p>
-                                <a href="#">Details</a>
+                                <Link to="/coursedetails">Details</Link>
                             </Col>
                         </Row>
                     </Col>
@@ -54,7 +55,7 @@ export default class AllCourse extends Component {
                             <Col lg={6} md={6} sm={12}>
                                 <h3 className="courseTitle">Web Development</h3>
                                 <p className="courseDescription">Want to build your website or app using the most up-to-date web development capabilities?</p>
-                                <a href="#">Details</a>
+                                <Link to="/coursedetails">Details</Link>
                             </Col>
                         </Row>
                     </Col>

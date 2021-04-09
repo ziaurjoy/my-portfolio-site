@@ -8,6 +8,11 @@ import TopNaver from '../components/TopNaver/TopNaver'
 import Contact from '../components/Contact/Contact'
 
 export default class MyServicePages extends Component {
+
+    componentDidMount(){
+        window.scroll(0,0)
+    }
+
     render() {
         return (
             <>  <TopNaver  title="Service"  />
