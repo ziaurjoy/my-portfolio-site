@@ -8,7 +8,7 @@ import TopNaver from '../components/TopNaver/TopNaver'
 export default class AllCoursPage extends Component {
     render() {
         return (
-            <>  <TopNaver />
+            <>  <TopNaver title="Courses"  />
                 <TopPages pageTitle = "All Courses" />
                 <AllCourse />
                 <FooterSection />

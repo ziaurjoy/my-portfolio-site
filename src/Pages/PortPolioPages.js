@@ -10,7 +10,7 @@ export default class PortPolioPages extends Component {
     render() {
         return (
             <>  
-            <TopNaver />
+            <TopNaver title="Portpolio"  />
             <TopPages pageTitle = "Protpolio Pages" />
             <PortFolio/>
             <FooterSection />

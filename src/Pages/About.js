@@ -10,7 +10,7 @@ export default class About extends Component {
     render() {
         return (
             <>
-                <TopNaver />
+                <TopNaver title="About" />
                 <TopPages pageTitle = "About Me" />
                 <AboutDescription />
                 <FooterSection />

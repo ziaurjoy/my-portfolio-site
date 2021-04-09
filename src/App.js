@@ -1,12 +1,15 @@
 
 import Home from "./Pages/HomePage";
 import PortPolioPages from "./Pages/PortPolioPages";
-
+import Route from "./Route/AppRoute";
+import {BrowserRouter} from 'react-router-dom'
 
 function App() {
   return (
     <div>
-    <PortPolioPages />
+      <BrowserRouter>
+      <Route />
+      </BrowserRouter>
     </div>
   );
 }

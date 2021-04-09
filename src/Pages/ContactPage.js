@@ -8,7 +8,7 @@ import Contact from '../components/Contact/Contact'
 export default class AllCoursPage extends Component {
     render() {
         return (
-            <>  <TopNaver />
+            <>  <TopNaver  title="Contact"  />
                 <TopPages pageTitle = "Contact Me" />
                 <Contact/>
                 <FooterSection />

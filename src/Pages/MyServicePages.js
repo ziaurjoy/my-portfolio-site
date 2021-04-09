@@ -10,7 +10,7 @@ import Contact from '../components/Contact/Contact'
 export default class MyServicePages extends Component {
     render() {
         return (
-            <>  <TopNaver />
+            <>  <TopNaver  title="Service"  />
                 <TopPages pageTitle = "My Service" />
                 <MyService/>
                 <Contact />
