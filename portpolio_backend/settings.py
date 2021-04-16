@@ -27,6 +27,13 @@ INSTALLED_APPS = [
 
 #   start app
     'API',
+    'chartdata',
+    'client_reviews',
+    'contact',
+    'service',
+    'courses',
+
+
 
 #   3rd party libraries
     'rest_framework',

@@ -29,13 +29,13 @@ export default class CourseDetails extends Component {
                     <div className="topPagerOverlay">
                         <Container className="topPageContent">
                             <Row>
-                                <Col lg={6} md={6} sm={12} className="text-justify courseDescription">
+                                <Col style={{color:"whitesmoke"}} lg={6} md={6} sm={12} className="text-justify courseDescription">
                                     <h4>Full Dynamic Website With Admin Panel</h4>
                                     <p>Total Class = 40</p>
                                     <p>Total Student = 40</p> 
                                 </Col>
                                 <Col>
-                                    <p lg={6} md={6} sm={12} className="text-justify courseDescription">Want to build your website or app using the most up-to-date web development capabilities? Read our useful guidance and analysis to build the future of the web! Website Visibility. Website Performance.</p>
+                                    <p style={{color:"whitesmoke"}}  lg={6} md={6} sm={12} className="text-justify courseDescription">Want to build your website or app using the most up-to-date web development capabilities? Read our useful guidance and analysis to build the future of the web! Website Visibility. Website Performance.</p>
                                 </Col>
                                
                             </Row>

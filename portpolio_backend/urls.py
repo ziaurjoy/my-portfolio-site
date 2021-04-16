@@ -4,16 +4,13 @@ from django.urls import path, include
 from API.views import *
 
 
-from rest_framework.routers import DefaultRouter
 
-router = DefaultRouter()
-router.register(r'chartdata', ChartDataViews, basename='chart-data')
-router.register(r'client/review', ClientReviewViews, basename='client-review')
-urlpatterns = router.urls
-
-
-# urlpatterns = [
-#     path('admin/', admin.site.urls),
-#     # path('/',include(API.urls)
-#     # path('chartdata', ChartDataViews.as_views(), name='chart-data')
-# ]
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('api/', include('API.urls')),
+    path('chartdata/', include('chartdata.urls')),
+    path('client/', include('client_reviews.urls')),
+    path('contact/', include('contact.urls')),
+    # path('client/', include('API.urls')),
+    # path('contact',contact_views, name='contact')
+]
