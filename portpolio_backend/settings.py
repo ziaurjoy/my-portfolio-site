@@ -28,7 +28,8 @@ INSTALLED_APPS = [
 #   start app
     'API',
 
-    
+#   3rd party libraries
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -65,12 +66,23 @@ WSGI_APPLICATION = 'portpolio_backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+'default': {
+    'ENGINE': 'django.db.backends.mysql',
+    'NAME': 'my_protpolio',
+    'HOST': '127.0.0.1',
+    'PORT': '3307',
+    'USER': 'root',
+    'PASSWORD': '',
+}}
 
 
 # Password validation
