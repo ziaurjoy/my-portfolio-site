@@ -2,8 +2,8 @@ from django.shortcuts import render
 
 from rest_framework import viewsets
 
-from .serializer import *
-from chartdata.models import *
+from .serializer import ChartDataSerializer
+from chartdata.models import ChartData
 # Create your views here.
 
 class ChartDataViews(viewsets.ModelViewSet):

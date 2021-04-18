@@ -26,12 +26,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
 #   start app
-    'API',
     'chartdata',
     'client_reviews',
     'contact',
     'service',
     'courses',
+    'footer',
+    'projects',
+    'home',
 
 
 

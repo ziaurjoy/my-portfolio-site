@@ -1,7 +1,7 @@
 
 from rest_framework import serializers
 
-from .models import *
+from .models import ClientReviews
 
 class ClientReviewsSerializer(serializers.ModelSerializer):
     class Meta:

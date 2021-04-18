@@ -2,8 +2,8 @@ from django.shortcuts import render
 
 from rest_framework import viewsets
 
-from .Serializer import *
-from .models import *
+from .Serializer import ClientReviewsSerializer
+from .models import ClientReviews
 # Create your views here.
 
 

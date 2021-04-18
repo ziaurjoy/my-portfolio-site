@@ -2,7 +2,7 @@
 from django.contrib import admin
 from django.urls import path, include
 
-from contact.views import *
+from contact.views import contact_views
 
 
 urlpatterns = [

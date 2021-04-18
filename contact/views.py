@@ -9,8 +9,8 @@ from rest_framework.response import Response
 from rest_framework import viewsets
 
 
-from .serializer import *
-from .models import *
+from .serializer import ContactSerializer
+from .models import Contact
 # Create your views here.
 
 
