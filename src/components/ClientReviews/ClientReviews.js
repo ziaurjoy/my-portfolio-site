@@ -6,10 +6,41 @@ import Slider from "react-slick";
 
 import { Col, Container, Row } from 'react-bootstrap';
 
-import ClientPic from '../../asset/images/Joy.png'
+import RestClinet from '../../Rest_API/RestClient';
+import AppUrl from '../../Rest_API/AppUrl';
 
 export default class ClientReviews extends Component {
+
+    constructor(){
+      super()
+      this.state = {
+        arrayData: []
+      }
+    }
+
+    componentDidMount(){
+      RestClinet.GetRequest(AppUrl.Clinet).then( result => {
+        this.setState({arrayData: result})
+      }).catch(error => {
+        this.setState({arrayData: []})
+      })
+    }
+
     render() {
+
+
+        const arrayData = this.state.arrayData
+        const singleArray = arrayData.map( singleData => {
+          return <div>
+                    <Row className="text-center justify-content-center">
+                        <Col lg={6} md={6} sm={12}>
+                            <img className="clientImage" src={singleData.client_image} />
+                            <h4>{singleData.client_title}</h4>
+                            <p>{singleData.client_description}</p>
+                        </Col>
+                    </Row>
+                  </div>
+        })
 
         var settings = {
             autoplaySpeed:3000,
@@ -53,33 +84,7 @@ export default class ClientReviews extends Component {
             <Container>
             <h2 className="serviceMainTitle text-center"> Client Reviews </h2>
             <Slider {...settings}>
-                <div>
-                    <Row className="text-center justify-content-center">
-                        <Col lg={6} md={6} sm={12}>
-                            <img className="clientImage" src={ClientPic} />
-                            <h4>Web Development</h4>
-                            <p>Want to build your website or app using the most up-to-date web development capabilities? Read our useful guidance and analysis to build the future of the web! Website Visibility. Website Performance.</p>
-                        </Col>
-                    </Row>
-                </div>
-                <div>
-                    <Row className="text-center justify-content-center">
-                        <Col lg={6} md={6} sm={12}>
-                            <img className="clientImage" src={ClientPic} />
-                            <h4>Web Development</h4>
-                            <p>Want to build your website or app using the most up-to-date web development capabilities? Read our useful guidance and analysis to build the future of the web! Website Visibility. Website Performance.</p>
-                        </Col>
-                    </Row>
-                </div>
-                <div>
-                    <Row className="text-center justify-content-center">
-                        <Col lg={6} md={6} sm={12}>
-                            <img className="clientImage" src={ClientPic} />
-                            <h4>Web Development</h4>
-                            <p>Want to build your website or app using the most up-to-date web development capabilities? Read our useful guidance and analysis to build the future of the web! Website Visibility. Website Performance.</p>
-                        </Col>
-                    </Row>
-                </div>
+                {singleArray}
             </Slider>
             </Container>
             

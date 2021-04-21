@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 
 
-
-import TopPages from '../components/TopPages/TopPages'
 import TopNaver from '../components/TopNaver/TopNaver'
 import CourseDetails from '../components/CourseDetails/CourseDetails'
 import FooterSection from '../components/FooterSection/FooterSection'

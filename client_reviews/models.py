@@ -5,7 +5,7 @@ from django.db import models
 
 
 class ClientReviews(models.Model):
-    client_image = models.ImageField()
+    client_image = models.ImageField(upload_to='client Image')
     client_title = models.CharField(max_length=100)
     client_description = models.TextField()
 

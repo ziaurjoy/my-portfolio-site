@@ -2,6 +2,8 @@
 
 from pathlib import Path
 
+import os
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -12,7 +14,8 @@ SECRET_KEY = 'django-insecure-%qmt@hy1ergto#@mp*!76gihy0_91&-y!!&!xd@*p#-g0zr-!p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS=['*']
 
 
 # Application definition
@@ -39,9 +42,15 @@ INSTALLED_APPS = [
 
 #   3rd party libraries
     'rest_framework',
+    # 'corsheaders',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+
+    #Corsheaders
+    'corsheaders.middleware.CorsMiddleware',
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -130,9 +139,38 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+MEDIA_DIR = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = MEDIA_DIR
+MEDIA_URL = '/media/'
+
+
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'static')
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# react Server request
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+
+]
+
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    "http://localhost:3000",
+]
+
+# CORS_URLS_REGEX = r'^/api/.*'
+
+
+# Backend Server request
+
+CORS_ORIGIN_ALLOW_ALL = True

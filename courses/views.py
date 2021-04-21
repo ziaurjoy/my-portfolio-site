@@ -10,7 +10,6 @@ from courses.serializer import *
 
 
 class CourseHome(viewsets.ModelViewSet):
-
     serializer_class = CourseSerializer
     queryset = Courses.objects.all()[:4]
 

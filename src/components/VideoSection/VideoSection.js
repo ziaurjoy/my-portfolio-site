@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { Col, Container, Row, Card, Button, Modal } from 'react-bootstrap'
+import { Container, Card, Button, Modal } from 'react-bootstrap'
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPlayCircle} from "@fortawesome/free-solid-svg-icons";

@@ -4,5 +4,5 @@ from django.db import models
 
 
 class ChartData(models.Model):
-    x_data = models.CharField(max_length=100)
-    y_data = models.CharField(max_length=100)
+    technology = models.CharField(max_length=100)
+    experience = models.CharField(max_length=100)

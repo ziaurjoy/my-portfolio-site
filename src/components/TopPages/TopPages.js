@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Col, Container, Row, Button } from 'react-bootstrap'
-import AboutDescription from '../AboutDescription/AboutDescription'
+import { Col, Container, Row } from 'react-bootstrap'
+
 
 export default class TopPages extends Component {
     render() {

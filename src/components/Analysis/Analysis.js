@@ -4,43 +4,26 @@ import { Col, Container, Row } from 'react-bootstrap'
 
 import { BarChart, Bar, ResponsiveContainer, XAxis, Tooltip } from 'recharts';
 
+import RestClinet from '../../Rest_API/RestClient'
+import AppUrl from '../../Rest_API/AppUrl'
+
 export default class Analysis extends Component {
+
     constructor(){
         super()
         this.state = {
-            data : [
-                {
-                    Technology: 'Python',
-                    Experience: 100
-                },
-                {
-                    Technology: 'Django',
-                    Experience: 100
-                },
-                {
-                    Technology: 'SQL',
-                    Experience: 80
-                },
-                {
-                    Technology: 'HTML5',
-                    Experience: 90
-                },
-                {
-                    Technology: 'CSS',
-                    Experience: 80
-                },
-                {
-                    Technology: 'JavaScript',
-                    Experience: 70
-                },
-                {
-                    Technology: 'React',
-                    Experience: 70
-                },
-            ]
+            data : []
         }
     }
+
+    componentDidMount(){
+        RestClinet.GetRequest(AppUrl.ChartData).then(result=>{
+            this.setState({data: result})
+        })
+    }
+
     render() {
+        
         var blue = "rgb(0,115,230)"
         return (
             <>
@@ -50,9 +33,9 @@ export default class Analysis extends Component {
                      <Col style={{width:'100%', height:'300px'}} lg={6} md={12} sm={12}>
                         <ResponsiveContainer>
                             <BarChart width={100} height={300} data={this.state.data}>
-                                <XAxis dataKey="Technology"/>
+                                <XAxis dataKey="technology"/>
                                 <Tooltip/>
-                                <Bar dataKey="Experience" fill={blue} >
+                                <Bar dataKey="experience" fill={blue} >
                                 </Bar>
                             </BarChart>
                         </ResponsiveContainer>
